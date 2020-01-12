@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Genetic Algorithms Introduction</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -21,12 +21,200 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<link rel="stylesheet" href="css/presentation.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section class="dark-blue">
+					<section class="gradient-border">
+						<h1>Genetic Algorithms</h1>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Agenda</h1>
+							<ul class="list text-align-left">
+								<li>What is a Genetic Algorithm?</li>
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>What is a Genetic Algorithm?</h1>
+							<ul class="list text-align-left">
+								<li>Uses:</li>
+								<ul>
+									<li>Optimization</li>
+								</ul>
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Terminology</h1>
+							<ul class="list text-align-left">
+								<li>Gene</li>
+								<li>Chromosome</li>
+								<li>Individual</li>
+								<li>Population</li>
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Components</h1>
+							<ul class="list text-align-left">
+								<li>Fitness calculation</li>
+								<li>Selection</li>
+								<li>Crossover</li>
+								<li>Mutation</li>
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Fitness Calculation</h1>
+							<ul class="list text-align-left">
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Selection</h1>
+							<ul class="list text-align-left">
+								<li>Roulette Wheel Selection</li>
+								<li>(Weighted) Rank Selection</li>
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Crossover</h1>
+							<ul class="list text-align-left">
+
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Mutation</h1>
+							<ul class="list text-align-left">
+
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Advantages</h1>
+							<ul class="list text-align-left">
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Limitations</h1>
+							<ul class="list text-align-left">
+								<li>Can get stuck in "local" optimal solution</li>
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>References</h1>
+							<ul class="list text-align-left" style="font-size: 2.0rem;">
+								<li><a href="https://fidoalliance.org/" target="_blank">https://fidoalliance.org/</a></li>
+							</ul>
+						</div>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -43,7 +231,15 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/highlight/highlight.js' },
 					{ src: 'plugin/notes/notes.js', async: true }
-				]
+				],
+				width: "100%",
+				height: "100%",
+				margin: 0,
+				minScale: 1,
+				maxScale: 1,
+				center: false,
+				controls: false,
+				progress: false,
 			});
 		</script>
 	</body>
