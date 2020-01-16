@@ -43,6 +43,9 @@
 							<h1>Agenda</h1>
 							<ul class="list text-align-left">
 								<li>What is a Genetic Algorithm?</li>
+								<li>Components ("Lifecycle") in Genetic Algorithms</li>
+								<li>Advantages</li>
+								<li>Limitations</li>
 							</ul>
 						</div>
 
@@ -58,9 +61,12 @@
 						<div class="gradient-right-content">
 							<h1>What is a Genetic Algorithm?</h1>
 							<ul class="list text-align-left">
+								<li>Method of multi-parameter problem solving, using natural selection principles</li>
 								<li>Uses:</li>
 								<ul>
 									<li>Optimization</li>
+									<li>Data Modelling</li>
+									<li>Searching</li>
 								</ul>
 							</ul>
 						</div>
@@ -81,9 +87,11 @@
 								<li>Chromosome</li>
 								<li>Individual</li>
 								<li>Population</li>
+								<li>Generation</li>
 							</ul>
-						</div>
 
+							<img src="img/Terminology.png" />
+						</div>
 						<aside class="notes">
 							<ul>
 							</ul>
@@ -96,6 +104,7 @@
 						<div class="gradient-right-content">
 							<h1>Components</h1>
 							<ul class="list text-align-left">
+								<li>Data encoding</li>
 								<li>Fitness calculation</li>
 								<li>Selection</li>
 								<li>Crossover</li>
@@ -113,8 +122,27 @@
 				<section class="dark-blue">
 					<section class="gradient-right">
 						<div class="gradient-right-content">
+							<h1>Data Encoding</h1>
+							<ul class="list text-align-left">
+								<li>Array-like structure</li>
+								<li>Usually booleans or integers, but doesn't have to be</li>
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
 							<h1>Fitness Calculation</h1>
 							<ul class="list text-align-left">
+								<li>Takes an individual and calculates a value</li>
+								<li>Used to determine how "fit" for the solution the individual is</li>
 							</ul>
 						</div>
 
@@ -130,8 +158,15 @@
 						<div class="gradient-right-content">
 							<h1>Selection</h1>
 							<ul class="list text-align-left">
-								<li>Roulette Wheel Selection</li>
-								<li>(Weighted) Rank Selection</li>
+								<li>Selecting individuals for the next generation</li>
+								<li>Relies on fitness calcuations in some manner</li>
+								<li>Example implementations:</li>
+								<ul>
+									<li>Roulette Wheel Selection</li>
+									<li>(Weighted) Rank Selection</li>
+									<li>Tournament selection</li>
+									<li>Reward-based selection</li>
+								</ul>
 							</ul>
 						</div>
 
@@ -147,7 +182,13 @@
 						<div class="gradient-right-content">
 							<h1>Crossover</h1>
 							<ul class="list text-align-left">
-
+								<li>Combining genes of selected parents</li>
+								<li>Example implementations:</li>
+								<ul>
+									<li>Single-point</li>
+									<li>Two-point</li>
+									<li>Uniform</li>
+								</ul>
 							</ul>
 						</div>
 
@@ -163,7 +204,44 @@
 						<div class="gradient-right-content">
 							<h1>Mutation</h1>
 							<ul class="list text-align-left">
+								<li>Changing gene(s) of an individual, based of random chance</li>
+								<li>Helps to increase genetic diversity</li>
+								<li>Too much mutation chance can delay finding the optimal solution</li>
+							</ul>
+						</div>
 
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Genetic Diversity</h1>
+							<ul class="list text-align-left">
+								<li>Too little: sub-optimal solution</li>
+								<li>Too much: takes longer to converge on a solution</li>
+							</ul>
+						</div>
+
+						<aside class="notes">
+							<ul>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section class="dark-blue">
+					<section class="gradient-right">
+						<div class="gradient-right-content">
+							<h1>Termination Conditions</h1>
+							<ul class="list text-align-left">
+								<li>Acceptable fitness threshold reached</li>
+								<li>Generation limit</li>
+								<li>No/insufficient changes to fitness</li>
 							</ul>
 						</div>
 
@@ -179,6 +257,8 @@
 						<div class="gradient-right-content">
 							<h1>Advantages</h1>
 							<ul class="list text-align-left">
+								<li>Can handle a large number of parameters</li>
+								<li>Ability to search large area of solution space</li>
 							</ul>
 						</div>
 
@@ -195,6 +275,7 @@
 							<h1>Limitations</h1>
 							<ul class="list text-align-left">
 								<li>Can get stuck in "local" optimal solution</li>
+								<li>Encoding the data and defining the fitness function can be tricky</li>
 							</ul>
 						</div>
 
@@ -210,7 +291,8 @@
 						<div class="gradient-right-content">
 							<h1>References</h1>
 							<ul class="list text-align-left" style="font-size: 2.0rem;">
-								<li><a href="https://fidoalliance.org/" target="_blank">https://fidoalliance.org/</a></li>
+								<li><a href="https://www.mathworks.com/help/gads/what-is-the-genetic-algorithm.html" target="_blank">https://www.mathworks.com/help/gads/what-is-the-genetic-algorithm.html</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/Genetic_algorithm" target="_blank">https://en.wikipedia.org/wiki/Genetic_algorithm</a></li>
 							</ul>
 						</div>
 					</section>
